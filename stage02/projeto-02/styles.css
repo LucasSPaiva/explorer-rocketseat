@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+
+	background: linear-gradient(
+		180deg,
+		rgba(227, 255, 248, 0) 82.08%,
+		rgba(146, 206, 191, 0.38) 100%
+	);
+}
+
+.page {
+	margin: auto;
+	width: 1000px;
+	padding-top: 65px;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 58px;
+}
+
+nav #logo {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	color: #89c5cc;
+	transition: 0.3s color;
+}
+
+nav #logo:hover {
+	color: #5e8691;
+}
+
+nav .menu {
+	display: flex;
+	justify-content: center;
+	gap: 48px;
+}
+
+nav .menu a {
+	font-family: 'Mulish', sans-serif;
+	transition: 0.3s text-shadow;
+}
+
+nav .menu a:hover,
+footer p a:hover {
+	text-shadow: 0 0 1px currentColor;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 80px;
+}
+
+main #main-left {
+	width: 430px;
+
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+main #main-left h1 {
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 49px;
+	line-height: 50px;
+}
+
+main #main-left h1 span {
+	font-weight: 700;
+	font-size: 49px;
+	color: #89c5cc;
+	transition: 0.3s color;
+}
+
+main #main-left h1 span:hover {
+	color: #9fdee6;
+}
+
+main #main-left p,
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px;
+	color: #7d7987;
+}
+
+main #main-left a button {
+	background: #69b99d;
+	padding: 15px 32px;
+	border: 0;
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	color: #edfff9;
+	text-transform: uppercase;
+
+	transition: 0.3s background-color;
+}
+
+main #main-left a button:hover {
+	background-color: #5ca189;
+	cursor: pointer;
+}
+
+footer p {
+	color: #000000;
+}
+
+footer p a {
+	font-weight: 700;
+	transition: 0.3s text-shadow;
+}
+
+#balls {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
