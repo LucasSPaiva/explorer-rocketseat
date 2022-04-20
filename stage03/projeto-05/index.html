@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Avalie sua Mentoria</title>
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<h1>Avalie sua mentoria</h1>
+				<p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+				<img
+					src="https://user-images.githubusercontent.com/65200790/164279038-d2a8fe7a-7364-496d-bf58-0a1899630a38.png"
+					alt="desenho apresentando um tipo de avaliação por estrelas com apenas três estrelas selecionadas"
+				/>
+			</header>
+			<legend id="first-legend">Informações Pessoais</legend>
+			<form id="form-mentoring">
+				<fieldset>
+					<div class="fieldset-wrapper"></div>
+					<div class="name-surname">
+						<div class="input-wrapper">
+							<label for="mentoring-name">Nome</label>
+							<input type="text" id="mentoring-name" required />
+						</div>
+						<div class="input-wrapper">
+							<label for="mentoring-surname">Sobrenome</label>
+							<input type="text" id="mentoring-surname" />
+						</div>
+					</div>
+					<div class="input-wrapper">
+						<label for="mentoring-email">
+							Email<span>(digite um email válido)</span>
+						</label>
+						<input type="email" id="mentoring-email" required />
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Informações do Mentor</legend>
+					<div class="input-wrapper">
+						<label for="mentoring-mentor">
+							Selecione quem for seu mentor
+						</label>
+						<select id="mentoring-mentor" required>
+							<option value=""></option>
+							<option value="diego-fernandes">Diego Fernandes</option>
+							<option value="jake-gracielly">Jake Gracielly</option>
+							<option value="mayk-brito">Mayk Brito</option>
+							<option value="rodrigo-goncalvez">Rodrigo Gonçalvez</option>
+						</select>
+						<label for="mentoring-feedback"> Feedback sobre o mentor </label>
+						<textarea id="mentoring-feedback" required></textarea>
+					</div>
+					<div class="input-wrapper-doubt">
+						<input type="checkbox" id="mentoring-doubt"/>
+						<label for="mentoring-doubt">
+							Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+						</label>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Agendando próxima mentoria</legend>
+					<div class="next-mentoring">
+						<div class="input-wrapper">
+							<label for="mentoring-date">Data<span>(DD/MM/AAAA)</span></label>
+							<input type="date" id="mentoring-date" />
+						</div>
+						<div class="input-wrapper">
+							<label for="mentoring-hour-of">Das</label>
+							<input type="time" id="mentoring-hour-of" />
+						</div>
+						<div class="input-wrapper">
+							<label for="mentoring-hour-until">Até</label>
+							<input type="time" id="mentoring-hour-until" />
+						</div>
+					</div>
+				</fieldset>
+				<button id="button-submit" type="submit" form="form-mentoring">
+					Salvar
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
