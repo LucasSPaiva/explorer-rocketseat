@@ -11,17 +11,33 @@
   - [Projeto 01](#projeto-01)
   - [Projeto 02](#projeto-02)
   - [Projeto 03](#projeto-03)
+  - [Projeto 04](#projeto-04)
 
 ## Stage 02
 
-### [Projeto-01](https://github.com/LucasSPaiva/explorer-rocketseat/tree/main/stage02/projeto-01)
+### [Projeto 01](https://github.com/LucasSPaiva/explorer-rocketseat/tree/main/stage02/projeto-01)
 
 ![projeto 01](https://user-images.githubusercontent.com/65200790/161609037-b64379a9-cb1b-4960-889e-1ee3671eef01.jpg)
 
-### [Projeto-02](https://github.com/LucasSPaiva/explorer-rocketseat/tree/main/stage02/projeto-02)
+---
+
+### [Projeto 02](https://github.com/LucasSPaiva/explorer-rocketseat/tree/main/stage02/projeto-02)
 
 ![projeto 02](https://user-images.githubusercontent.com/65200790/163741921-061a930e-d843-4ddf-b266-4f775e77c955.png)
 
-### [Projeto-03](https://github.com/LucasSPaiva/explorer-rocketseat/tree/main/stage02/projeto-03)
+---
+
+### [Projeto 03](https://github.com/LucasSPaiva/explorer-rocketseat/tree/main/stage02/projeto-03)
 
 ![projeto 03](https://user-images.githubusercontent.com/65200790/163843821-b9e3eb71-0109-47e2-a1ea-76b4d470689d.png)
+
+---
+
+### [Projeto 04](https://github.com/LucasSPaiva/explorer-rocketseat/tree/main/stage02/projeto-04)
+
+![projeto 04](https://user-images.githubusercontent.com/65200790/224768000-97a02ad5-0ed5-444b-b0a6-83edcc485595.png)
+
+
+<h1 align="center">
+    🚧 Work in progress 🚧
+</h1>
