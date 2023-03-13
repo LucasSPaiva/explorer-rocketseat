@@ -2,184 +2,245 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	cursor: default;
 }
 
-h1,
-button,
-legend {
-	font-family: 'Staatliches', cursive;
-	font-weight: 400;
+:root {
+	--font-size-paragraph: 1.6rem;
+
+	--font-size-title: 4rem;
+
+	--hue: 249;
+
+	--color-text-dark: hsl(var(--hue), 100%, 11%);
+	--color-text-dark-accent: hsl(calc(var(--hue) + 1), 83%, 64%);
+	--color-text-dark-gray: hsla(calc(var(--hue) + 2), 100%, 11%, 0.64);
+	--color-text-light: hsl(0, 0%, 100%);
+	--color-text-light-accent: hsl(var(--hue), 50%, 80%);
+	--color-text-light-gray: hsla(0, 0%, 100%, 0.64);
+	--color-background-light: hsl(var(--hue), 83%, 95%);
+	--color-background-dark: hsl(calc(var(--hue) - 12), 22%, 20%);
+
+	font-size: 62.5%;
 }
 
-body,
-input {
-	background: #e5e5e5;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-}
-
-body::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 436px;
-
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background-color: #535971;
+body {
+	background-color: var(--color-background-dark);
+	padding: 10rem 2.3rem;
 }
 
 .page {
-	width: 750px;
-	margin: 0 auto;
-	padding: 140px 0 0 0;
+	font-family: 'Epilogue', sans-serif;
 
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	max-width: 37.5rem;
+	margin: 0 auto;
 }
 
 header {
-	color: #ffffff;
-}
+	text-align: center;
+	margin-bottom: 8rem;
 
-header h1 {
-	font-size: 48px;
-
-	margin-bottom: 18px;
+	animation: top-down 0.7s;
 }
 
 header p {
-	font-size: 20px;
-	line-height: 30px;
+	font-weight: 400;
+	font-size: var(--font-size-paragraph);
+	line-height: 3.2rem;
+	letter-spacing: 3px;
 
-	margin-bottom: 50px;
+	text-transform: uppercase;
+
+	color: var(--color-text-light-accent);
+
+	margin-bottom: 1.7rem;
 }
 
-form {
-	width: 750px;
-	padding: 64px;
+header h1 {
+	color: var(--color-text-light);
 
-	background: #ffffff;
-	border-radius: 20px 20px 0px 0px;
-
-	display: flex;
-	flex-direction: column;
-	gap: 22px;
+	font-weight: 800;
+	font-size: var(--font-size-title);
+	line-height: 4.8rem;
 }
 
-form fieldset {
-	border: 0;
+main {
+	display: grid;
+	gap: 3.2rem;
+
+	margin: 0 auto;
 }
 
-legend {
-	font-size: 24px;
-	line-height: 34px;
+.card {
+	position: relative;
 
-	color: #535971;
-
-	padding-bottom: 8px;
-	border-bottom: 1px solid #e6e6f0;
-
-	margin-bottom: 32px;
-}
-
-.input-wrapper {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-
-	font-size: 14px;
-	line-height: 24px;
-	color: #4e4958;
-
-	margin-bottom: 16px;
-}
-
-.input-wrapper label span {
-	font-size: 12px;
-	line-height: 20px;
-	color: #c1bccc;
-	margin-left: 8px;
-	transition: 0.4s color;
-}
-
-.input-wrapper label span:hover {
-	color: #000000;
-}
-
-#name-surname {
-	display: flex;
-	gap: 22px;
-}
-
-#name-surname .input-wrapper {
-	width: 50%;
-}
-
-.input-wrapper input {
 	width: 100%;
-	height: 56px;
-	background: #fafafc;
+	height: 41.6rem;
 
-	border: 1px solid #e6e6f0;
-	box-sizing: border-box;
-	border-radius: 8px;
+	border-radius: 6px;
+	border: 1px solid #2fb180;
+	transition: 0.4s transform;
 
-	padding: 0 24px;
+	animation: down-top 0.7s 0.3s backwards;
 }
 
-.legend-date {
-	font-size: 20px;
-	line-height: 34px;
-
-	border: 0;
-	margin: 0;
+.card:hover {
+	transform: scale(1.05);
 }
 
-.fieldset-date {
-	display: flex;
-	gap: 10px;
-}
-
-.fieldset-date > div {
-	width: 25%;
-}
-
-.fieldset-date > div:nth-child(1) {
-	width: 50%;
-	margin-right: 22px;
-}
-
-footer {
+/*
+	Lembrar sempre de deixar a imagem sem esticar, com um width de 100%
+	ela vai ficar com o tamanho da tag que ela é contida ou "pai", e com
+	uma largura automática faz com que ela fique com uma responsividade.
+	O object-fit: cover; faz com que a imagem  permaneça do tamanho
+	original sem "esticar" e apenas mostre o tamanho que foi definido
+*/
+.card img {
 	width: 100%;
-	height: 160px;
-	background-color: #535971;
-	border-radius: 0 0 20px 20px;
+	height: 100%;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	object-fit: cover;
 
-	margin-bottom: 360px;
+	border-radius: 6px;
+	transition: 0.3s all;
 }
 
-footer button {
-	font-size: 20px;
-	color: #ffffff;
+.card .card-mask-image {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	background: #7e726f;
 
-	border: 0;
-	border-radius: 20px;
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 
-	margin: 52px 70px;
-	padding: 15px 280px;
+	background: #342c27cc;
+	mix-blend-mode: darken;
+	opacity: 0.2;
 
-	background-color: #ff5374;
-	transition: 0.5s background-color;
+	transition: 0.7s all;
 }
 
-footer button:hover {
-	background-color: #e4254b;
+.card:hover .card-mask-image {
+	opacity: 0.6;
+}
+
+.card a {
+	cursor: default;
+	text-decoration: none;
+
+	position: absolute;
+	left: 2.8rem;
+	bottom: 5rem;
+
+	display: grid;
+	gap: 2.3rem;
+
+	animation: down-top 0.7s 0.7s backwards;
+}
+
+.card a button {
+	width: fit-content;
+
+	border-radius: 2rem;
+	padding: 1rem 1.6rem;
+
+	font-family: 'Epilogue', sans-serif;
+	font-size: var(--font-size-paragraph);
+	color: var(--color-text-dark);
+	border: none;
+	transition: 0.2s all;
+}
+
+.card a button:hover {
 	cursor: pointer;
+	background-color: var(--color-text-light-accent);
+}
+
+.card a h2 {
+	font-weight: 800;
+
+	font-size: var(--font-size-title);
+
+	color: var(--color-text-light);
+	transition: 0.2s all;
+}
+
+.card a h2:hover {
+	cursor: pointer;
+	color: var(--color-text-light-accent);
+	text-shadow: 0 0 5px rgb(60, 52, 52);
+}
+
+@keyframes down-top {
+	0% {
+		opacity: 0;
+		transform: translateY(15px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes top-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-15px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (min-width: 750px) {
+	:root {
+		--font-size-title: 5.6rem;
+		--font-size-paragraph: 2.25rem;
+	}
+
+	body {
+		padding: 10rem 4.6rem;
+	}
+
+	.page {
+		max-width: 117rem;
+	}
+
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+		padding: 10rem 6.9rem;
+	}
+
+	main {
+		grid-template-columns: none;
+		grid-template:
+			'A A B B B'
+			'C C C D D';
+	}
+
+	main div:nth-child(1) {
+		grid-area: A;
+	}
+	main div:nth-child(2) {
+		grid-area: B;
+	}
+	main div:nth-child(3) {
+		grid-area: C;
+	}
+	main div:nth-child(4) {
+		grid-area: D;
+	}
 }

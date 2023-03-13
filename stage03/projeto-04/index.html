@@ -1,122 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<meta charset="UTF-8" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
-			rel="stylesheet"
-		/>
+
+		<title>Responsividade com Grid</title>
 
 		<link rel="stylesheet" href="style.css" />
 
-		<title>Mentoria 01</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="page">
 			<header>
-				<h1>MENTORIA</h1>
-				<p>
-					Preencha o formulário abaixo para <br />
-					agendar a sua mentoria
-				</p>
+				<p>Recentes</p>
+				<h1>Trabalhos</h1>
 			</header>
-			<form id="form-mentoring">
-				<fieldset>
-					<div class="fieldset-wrapper">
-						<legend>Informações Pessoais</legend>
-						<div id="name-surname">
-							<div class="input-wrapper">
-								<label for="mentoring-name">Nome</label>
-								<input type="text" id="mentoring-name" required />
-							</div>
-							<div class="input-wrapper">
-								<label for="mentoring-surname">Sobrenome</label>
-								<input type="text" id="mentoring-surname" />
-							</div>
-						</div>
-						<div class="input-wrapper">
-							<label for="mentoring-email">
-								Email
-								<span>(digite um email válido)</span>
-							</label>
-							<input type="email" id="mentoring-email" required />
-						</div>
-						<div class="input-wrapper">
-							<label for="mentoring-password">
-								Senha
-								<span>(mínimo de 6 caracteres)</span>
-							</label>
-							<input type="password" id="mentoring-password" required />
-						</div>
-					</div>
-				</fieldset>
+			<main>
+				<div class="card">
+					<img
+						src="https://images.unsplash.com/photo-1602064172250-43f8909056c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRlc2lnbmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+						alt=""
+					/>
+					<div class="card-mask-image"></div>
 
-				<fieldset>
-					<div class="fieldset-wrapper">
-						<legend>Informações do mentor</legend>
-						<div class="input-wrapper">
-							<label for="mentoring-mentor-name">
-								Nome do seu mentor
-								<span>(apenas o primeiro nome)</span>
-							</label>
-							<input type="text" id="mentoring-mentor-name" required />
-						</div>
-					</div>
-				</fieldset>
+					<a href="#">
+						<button>Branding</button>
+						<h2>Help</h2>
+					</a>
+				</div>
 
-				<fieldset>
-					<div class="fieldset-wrapper">
-						<legend>Seus horários disponíveis</legend>
-						<legend class="legend-date">Primeira Mentoria</legend>
-						<div class="fieldset-date">
-							<div class="input-wrapper">
-								<label for="mentoring-first-date"
-									>Data<span>(DD/MM/AAAA)</span></label
-								>
-								<input type="date" id="mentoring-first-date" required />
-							</div>
-							<div class="input-wrapper">
-								<label for="mentoring-first-of">Das</label>
-								<input type="time" id="mentoring-first-of" required />
-							</div>
-							<div class="input-wrapper">
-								<label for="mentoring-mentoring-first-util">Até</label>
-								<input
-									type="time"
-									id="mentoring-mentoring-first-util"
-									required
-								/>
-							</div>
-						</div>
-					</div>
-					<div class="fieldset-wrapper">
-						<legend class="legend-date">Segunda Mentoria</legend>
-						<div class="fieldset-date">
-							<div class="input-wrapper">
-								<label for="mentoring-second-date"
-									>Data<span>(DD/MM/AAAA)</span></label
-								>
-								<input type="date" id="mentoring-second-date" />
-							</div>
-							<div class="input-wrapper">
-								<label for="mentoring-second-of">Das</label>
-								<input type="time" id="mentoring-second-of" />
-							</div>
-							<div class="input-wrapper">
-								<label for="mentoring-mentoring-second-util">Até</label>
-								<input type="time" id="mentoring-mentoring-second-util" />
-							</div>
-						</div>
-					</div>
-				</fieldset>
-			</form>
-			<footer>
-				<button class="button" form="form-mentoring">SALVAR</button>
-			</footer>
+				<div class="card">
+					<img
+						src="https://images.unsplash.com/photo-1493421419110-74f4e85ba126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRlc2lnbmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+						alt=""
+					/>
+					<div class="card-mask-image"></div>
+					<a href="#">
+						<button>Design</button>
+						<h2>SOFA</h2>
+					</a>
+				</div>
+
+				<div class="card">
+					<img
+						src="https://images.unsplash.com/photo-1589747181401-fc4b80c3085e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGRlc2lnbmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+						alt=""
+					/>
+					<div class="card-mask-image"></div>
+					<a href="#">
+						<button>Motion</button>
+						<h2>DDDone</h2>
+					</a>
+				</div>
+
+				<div class="card">
+					<img
+						src="https://images.unsplash.com/photo-1539299056747-6ed44e2f8e78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aWx1c3RyYXRpb25zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+						alt=""
+					/>
+					<div class="card-mask-image"></div>
+					<a href="#">
+						<button>Illustration</button>
+						<h2>Work</h2>
+					</a>
+				</div>
+			</main>
 		</div>
 	</body>
 </html>
